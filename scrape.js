@@ -8,13 +8,14 @@ const scrapePostUrls = async (igName) => {
   const page = await browser.newPage()
   const url = `https://www.instagram.com/${igName}`
 
-  await page.goto(url, {waitUntil: 'networkidle2'}) // waiting until network traffic has stalled is important for the react-app to finish rendering the virtual DOM
+  await page.goto(url, {waitUntil: 'networkidle2'})
 
   let content = await page.content()
   const $ = cheerio.load(content)
   const postLinks = '#react-root section main div div div div div div a'
   const urls = $(postLinks).map((i, elem) => {
-    return $(elem).attr('href')
+    let resource = $(elem).attr('href') // '/p/RESOURCE/'
+    return resource.slice(resource.indexOf('/p/') + 3, resource.length - 1)
   })
 
   await browser.close()
@@ -22,7 +23,36 @@ const scrapePostUrls = async (igName) => {
   return urls.toArray()
 }
 
+// accepts restful resource like '/p/Bu8-3swHuCb/'
+// returns object with organized post metadat
+const scrapePost = async (postResource) => {
+  const browser = await puppeteer.launch()
+  const page = await browser.newPage()
+  const postUrl = `https://www.instagram.com/${postResource}`
+
+  await page.goto(postUrl, {waitUntil: 'networkidle2'})
+
+  let content = await page.content()
+  const $ = cheerio.load(content)
+  const sharedDataScriptNode = $('body > script:first-of-type')
+  const scriptNode = sharedDataScriptNode[0]
+
+  // this isn't the right scriptNode, looking for the one containing
+  // window._sharedData = { blah blah big json object }
+  const scriptContent = scriptNode.children.filter(c => c.type === 'text')
+    .map(textNode => textNode.data)
+  // slice the js obj text here and parse into a real object for returning
+
+  await browser.close()
+  return 'noop' // return the real data here
+}
+
 let igName = 'indie_hackers'
-scrapePostUrls(igName).then(val => {
-  console.log(val)
-})
+scrapePostUrls(igName)
+  .then(async (postIds) => {
+    const postId = postIds[0]
+    const data = await scrapePost(postId)
+  })
+  .catch(err => {
+    console.error(err)
+  })
