@@ -1,0 +1,433 @@
+{
+  "config": {
+    "csrf_token": "GA5e1DQloScpujvMYsfPqt9xPCQ3msJf",
+    "viewer": {
+      "biography": "",
+      "external_url": null,
+      "full_name": "ben",
+      "has_phone_number": true,
+      "has_profile_pic": true,
+      "id": "320956247",
+      "is_joined_recently": false,
+      "is_private": false,
+      "profile_pic_url": "https://instagram.fapa1-1.fna.fbcdn.net/vp/f6d032c2925ef8fc8427e5d4252d805f/5D424BEA/t51.2885-19/11910215_1457620624565342_311839367_a.jpg?_nc_ht=instagram.fapa1-1.fna.fbcdn.net",
+      "profile_pic_url_hd": "https://instagram.fapa1-1.fna.fbcdn.net/vp/f6d032c2925ef8fc8427e5d4252d805f/5D424BEA/t51.2885-19/11910215_1457620624565342_311839367_a.jpg?_nc_ht=instagram.fapa1-1.fna.fbcdn.net",
+      "username": "beeteepeee",
+      "badge_count": "{\"seq_id\": 87, \"badge_count\": 3, \"badge_count_at_ms\": 1555852054762}"
+    },
+    "viewerId": "320956247"
+  },
+  "country_code": "US",
+  "language_code": "en",
+  "locale": "en_US",
+  "entry_data": {
+    "FeedPage": [
+      {}
+    ]
+  },
+  "hostname": "www.instagram.com",
+  "deployment_stage": "c2",
+  "platform": "windows_nt_10",
+  "rhx_gis": "8e4975aa80e021604f7fc11816248340",
+  "nonce": "umwcy+2jdNpBSZq8hYFKeQ==",
+  "mid_pct": 4.66951,
+  "zero_data": {},
+  "cache_schema_version": 3,
+  "server_checks": {},
+  "knobs": {
+    "acct:ntb": 0,
+    "cb": 0,
+    "captcha": 0,
+    "fr": 0
+  },
+  "to_cache": {
+    "gatekeepers": {
+      "3": false,
+      "4": true,
+      "5": false,
+      "6": false,
+      "7": false,
+      "8": false,
+      "9": false,
+      "10": false,
+      "11": true,
+      "12": false,
+      "13": true,
+      "14": true,
+      "15": true,
+      "16": true,
+      "18": true,
+      "19": false,
+      "20": false,
+      "21": false,
+      "23": false,
+      "24": false,
+      "25": false,
+      "26": true,
+      "27": false,
+      "28": false,
+      "29": true
+    },
+    "qe": {
+      "sdc": {
+        "g": "",
+        "p": {}
+      },
+      "app_upsell": {
+        "g": "",
+        "p": {}
+      },
+      "igl_app_upsell": {
+        "g": "test_only_link",
+        "p": {
+          "has_iglite_content_and_link": "false",
+          "has_only_iglite_link": "true",
+          "has_no_upsell": "false"
+        }
+      },
+      "notif": {
+        "g": "",
+        "p": {}
+      },
+      "show_copy_link": {
+        "g": "test",
+        "p": {
+          "show_copy_link_option": "true"
+        }
+      },
+      "p_edit": {
+        "g": "test",
+        "p": {
+          "has_confirm_email": "true"
+        }
+      },
+      "acc_recovery": {
+        "g": "test_05_29",
+        "p": {
+          "can_reset_by_phone": "true"
+        }
+      },
+      "bundle": {
+        "g": "",
+        "p": {}
+      },
+      "collections": {
+        "g": "",
+        "p": {}
+      },
+      "comment_ta": {
+        "g": "",
+        "p": {}
+      },
+      "su": {
+        "g": "test",
+        "p": {
+          "has_locale_in_user_info": "true"
+        }
+      },
+      "ebdsim_li": {
+        "g": "test",
+        "p": {
+          "www_url": "true"
+        }
+      },
+      "ebdsim_lo": {
+        "g": "",
+        "p": {}
+      },
+      "heart_tab": {
+        "g": "",
+        "p": {}
+      },
+      "log_cont": {
+        "g": "test_intent_d_42",
+        "p": {
+          "has_contextual_m": "false",
+          "has_contextual_d": "true"
+        }
+      },
+      "onetaplogin": {
+        "g": "",
+        "p": {}
+      },
+      "onetap": {
+        "g": "",
+        "p": {}
+      },
+      "multireg_iter": {
+        "g": "",
+        "p": {}
+      },
+      "reg_vp": {
+        "g": "",
+        "p": {}
+      },
+      "su_universe": {
+        "g": "",
+        "p": {}
+      },
+      "tp_pblshr": {
+        "g": "",
+        "p": {}
+      },
+      "felix": {
+        "g": "test",
+        "p": {
+          "is_enabled": "true"
+        }
+      },
+      "felix_clear_fb_cookie": {
+        "g": "control",
+        "p": {
+          "is_enabled": "true",
+          "blacklist": "a"
+        }
+      },
+      "felix_creation_duration_limits": {
+        "g": "dogfooding",
+        "p": {
+          "maximum_length_seconds": "600",
+          "minimum_length_seconds": "15"
+        }
+      },
+      "felix_creation_fb_crossposting": {
+        "g": "control",
+        "p": {
+          "is_enabled": "false"
+        }
+      },
+      "felix_creation_fb_crossposting_v2": {
+        "g": "control",
+        "p": {
+          "is_enabled": "true",
+          "display_version": "2"
+        }
+      },
+      "felix_creation_validation": {
+        "g": "control",
+        "p": {
+          "edit_video_controls": "true",
+          "description_maximum_length": "2200",
+          "max_video_size_in_bytes": "3600000000",
+          "minimum_length_for_feed_preview_seconds": "60",
+          "title_maximum_length": "75",
+          "valid_cover_mime_types": "image/jpeg,image/png",
+          "valid_video_extensions": "mp4,mov",
+          "valid_video_mime_types": "video/mp4,video/quicktime"
+        }
+      },
+      "profile_enhance_lo": {
+        "g": "",
+        "p": {}
+      },
+      "comment_enhance": {
+        "g": "control",
+        "p": {
+          "can_like_comments": "true",
+          "has_new_comments_desktop": "false",
+          "has_new_comments_mobile": "false"
+        }
+      },
+      "mweb_topical_explore": {
+        "g": "",
+        "p": {}
+      },
+      "a2hs_heuristic_non_uc": {
+        "g": "",
+        "p": {}
+      },
+      "web_hashtag": {
+        "g": "control_hashtag_follow",
+        "p": {
+          "enable_hashtag_following": "false",
+          "enable_following_from_web": "false"
+        }
+      },
+      "web_hashtag_logged_out": {
+        "g": "",
+        "p": {}
+      },
+      "header_scroll": {
+        "g": "",
+        "p": {}
+      },
+      "lite_rating": {
+        "g": "",
+        "p": {
+          "is_enabled": "false"
+        }
+      },
+      "web_embeds_logged_out": {
+        "g": "",
+        "p": {}
+      },
+      "post_options": {
+        "g": "control",
+        "p": {
+          "use_refactor": "true",
+          "enable_igtv_embed": "true"
+        }
+      },
+      "igtv_creation_feed_preview": {
+        "g": "test",
+        "p": {
+          "is_enabled": "true"
+        }
+      },
+      "igtv_public_viewing": {
+        "g": "control",
+        "p": {
+          "is_enabled": "true"
+        }
+      },
+      "nux": {
+        "g": "",
+        "p": {}
+      },
+      "iglmsr": {
+        "g": "",
+        "p": {}
+      },
+      "igwsvl": {
+        "g": "control",
+        "p": {
+          "show_story_viewer_list": "false"
+        }
+      },
+      "iglcp": {
+        "g": "has_prefill",
+        "p": {
+          "has_login_prefill": "true"
+        }
+      },
+      "iglscioi": {
+        "g": "",
+        "p": {}
+      },
+      "wpn": {
+        "g": "",
+        "p": {}
+      },
+      "iglcius": {
+        "g": "",
+        "p": {}
+      },
+      "wfvu": {
+        "g": "",
+        "p": {}
+      },
+      "igwllre": {
+        "g": "",
+        "p": {}
+      },
+      "wss2": {
+        "g": "",
+        "p": {}
+      },
+      "sticker_tray": {
+        "g": "",
+        "p": {}
+      },
+      "web_sentry": {
+        "g": "test",
+        "p": {
+          "show_feedback": "true"
+        }
+      },
+      "0": {
+        "p": {},
+        "qex": true
+      },
+      "2": {
+        "p": {
+          "0": false
+        },
+        "qex": true
+      },
+      "4": {
+        "p": {
+          "0": false
+        },
+        "qex": true
+      },
+      "5": {
+        "p": {
+          "0": false
+        },
+        "qex": true
+      },
+      "6": {
+        "p": {
+          "0": "12",
+          "1": true
+        },
+        "qex": true
+      },
+      "7": {
+        "p": {
+          "0": false
+        },
+        "qex": true
+      },
+      "8": {
+        "p": {
+          "0": false,
+          "1": false,
+          "2": false,
+          "3": false,
+          "4": false
+        },
+        "qex": true
+      },
+      "9": {
+        "p": {
+          "0": false,
+          "1": false,
+          "2": 2000,
+          "3": 100,
+          "4": 25,
+          "5": false
+        },
+        "qex": true
+      },
+      "10": {
+        "p": {
+          "0": false,
+          "1": false,
+          "2": false,
+          "3": false
+        },
+        "qex": true
+      },
+      "11": {
+        "p": {
+          "0": false
+        },
+        "qex": true
+      },
+      "12": {
+        "p": {
+          "0": 5
+        },
+        "qex": true
+      },
+      "13": {
+        "p": {
+          "0": false
+        },
+        "qex": true
+      },
+      "14": {
+        "p": {
+          "0": false
+        },
+        "qex": true
+      }
+    },
+    "probably_has_app": false,
+    "cb": false
+  },
+  "rollout_hash": "f9446c134ba7",
+  "bundle_variant": "es6",
+  "is_canary": true
+}
