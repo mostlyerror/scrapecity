@@ -34,24 +34,30 @@ const scrapePost = async (postResource) => {
 
   let content = await page.content()
   const $ = cheerio.load(content)
-  const sharedDataScriptNode = $('body > script:first-of-type')
-  const scriptNode = sharedDataScriptNode[0]
+
+  //const sharedDataScriptNode = $('body > script:first-of-type')
+  //const scriptNode = sharedDataScriptNode[0]
 
   // this isn't the right scriptNode, looking for the one containing
   // window._sharedData = { blah blah big json object }
-  const scriptContent = scriptNode.children.filter(c => c.type === 'text')
-    .map(textNode => textNode.data)
+  //const scriptContent = scriptNode.children.filter(c => c.type === 'text')
+    //.map(textNode => textNode.data)
   // slice the js obj text here and parse into a real object for returning
+  
+  const data = await page.evaluate(function (id) {
+    return id
+  })
+  console.log(data)
 
   await browser.close()
-  return 'noop' // return the real data here
+  return data
 }
 
 let igName = 'indie_hackers'
 scrapePostUrls(igName)
   .then(async (postIds) => {
     const postId = postIds[0]
-    const data = await scrapePost(postId)
+    console.log(await scrapePost(postId))
   })
   .catch(err => {
     console.error(err)
