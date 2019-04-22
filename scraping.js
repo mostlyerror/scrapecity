@@ -9,9 +9,8 @@ const scrapeProfile = async igName => {
 
   const url = `https://www.instagram.com/${igName}`;
   const page = await axios.get(url)
-  // .then(page => { // }) // .catch(err => console.error(err)) // how to recover from 404?
-
   // recover from page.data undefined
+
   const matches = page.data.match(/window\._sharedData = (.*);<\/script>/);
   // recover from no matches
 
@@ -24,18 +23,20 @@ const scrapeProfile = async igName => {
 };
 
 let igName = 'indie_hackers';
+
 scrapeProfile(igName)
   .then(data => {
     const dateString = moment().toISOString()
     const filename = `${dateString}-${data.user.id}-${data.user.username}.json`
-    const filepath = path.join(__dirname, filename);
-    // console.log(filepath)
+    const filepath = path.join(__dirname, 'data', filename);
+
     fs.open(filepath, 'wx', (err, fd) => {
       if (err) throw err
+      const buf = JSON.stringify(data)
 
-      fs.write(fd, data, err => {
+      fs.write(fd, buf, err => {
         if (err) throw err
-        console.log(`${filename} written.`)
+        console.log(`${filepath} written.`)
       })
     })
   })
